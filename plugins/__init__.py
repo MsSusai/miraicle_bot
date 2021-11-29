@@ -4,4 +4,4 @@
 # 时间：2021/11/29  22:10 
 # 名称：__init__.PY
 # 工具：PyCharm
-__all__ = ["hello_world", "repeat"]
+__all__ = ["hello_world", "repeat", "sendImage", "groupSwitch", "blackList"]
