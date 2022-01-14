@@ -1,0 +1,112 @@
+{
+  "header": {
+    "user_id": "61884",
+    "account_type": "1",
+    "short_limit": "6",
+    "long_limit": "200",
+    "long_remaining": 191,
+    "short_remaining": 5,
+    "status": 0,
+    "results_requested": 1,
+    "index": {
+      "0": {
+        "status": 0,
+        "parent_id": 0,
+        "id": 0,
+        "results": 1
+      },
+      "2": {
+        "status": 0,
+        "parent_id": 2,
+        "id": 2,
+        "results": 1
+      },
+      "5": {
+        "status": 0,
+        "parent_id": 5,
+        "id": 5,
+        "results": 1
+      },
+      "51": {
+        "status": 0,
+        "parent_id": 5,
+        "id": 51,
+        "results": 1
+      },
+      "52": {
+        "status": 0,
+        "parent_id": 5,
+        "id": 52,
+        "results": 1
+      },
+      "53": {
+        "status": 0,
+        "parent_id": 5,
+        "id": 53,
+        "results": 1
+      },
+      "6": {
+        "status": 0,
+        "parent_id": 6,
+        "id": 6,
+        "results": 1
+      },
+      "8": {
+        "status": 0,
+        "parent_id": 8,
+        "id": 8,
+        "results": 1
+      },
+      "9": {
+        "status": 0,
+        "parent_id": 9,
+        "id": 9,
+        "results": 1
+      },
+      "21": {
+        "status": 0,
+        "parent_id": 21,
+        "id": 21,
+        "results": 1
+      },
+      "211": {
+        "status": 0,
+        "parent_id": 21,
+        "id": 211,
+        "results": 1
+      },
+      "22": {
+        "status": 0,
+        "parent_id": 22,
+        "id": 22,
+        "results": 1
+      }
+    },
+    "search_depth": "128",
+    "minimum_similarity": 80,
+    "query_image_display": "userdata/hxseV6BmF.jpg.png",
+    "query_image": "hxseV6BmF.jpg",
+    "results_returned": 1
+  },
+  "results": [
+    {
+      "header": {
+        "similarity": "90.68",
+        "thumbnail": "https://img1.saucenao.com/res/pixiv/8981/89817158_p0_master1200.jpg?auth=AteiMBDT4VWG0bHY-d-lSg&exp=1642536000",
+        "index_id": 5,
+        "index_name": "Index #5: Pixiv Images - 89817158_p0_master1200.jpg",
+        "dupes": 0,
+        "hidden": 0
+      },
+      "data": {
+        "ext_urls": [
+          "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=89817158"
+        ],
+        "title": "DNA\u306e\u7455",
+        "pixiv_id": 89817158,
+        "member_name": "\u3062\u305b",
+        "member_id": 4790
+      }
+    }
+  ]
+}

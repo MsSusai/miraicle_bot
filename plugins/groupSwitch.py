@@ -6,12 +6,10 @@
 # 工具：PyCharm
 import miraicle
 
-my_qq = 1850142559
-
 
 @miraicle.Mirai.filter('GroupSwitchFilter')
 def group_switch(bot: miraicle.Mirai, msg: miraicle.GroupMessage, flt: miraicle.GroupSwitchFilter):
-    if msg.sender == my_qq:
+    if bot.is_owner(msg.sender, msg.group):
         if msg.plain == '启用所有组件':
             flt.enable_all(group=msg.group)
             bot.send_group_msg(group=msg.group, msg='已在群内启用所有组件', quote=msg.id)
