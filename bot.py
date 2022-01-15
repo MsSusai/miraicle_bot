@@ -12,6 +12,6 @@ verify_key = 'mirai'  # 你在 setting.yml 中设置的 verifyKey
 port = 8080  # 你在 setting.yml 中设置的 port (http)
 
 bot = miraicle.Mirai(qq=qq, verify_key=verify_key, port=port)
-bot.set_filter(miraicle.GroupSwitchFilter(r'config\group_switch.json'))
+# bot.set_filter(miraicle.GroupSwitchFilter(r'config\group_switch.json'))
 bot.set_filter(miraicle.BlacklistFilter(r'config\blacklist.json'))
 bot.run()
