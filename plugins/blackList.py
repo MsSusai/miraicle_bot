@@ -23,8 +23,9 @@ def blacklist(bot: miraicle.Mirai, msg: miraicle.GroupMessage, flt: miraicle.Bla
             else:
                 bot.send_group_msg(group=msg.group, msg="不可原谅(╯‵□&...", quote=msg.id)
     if bot.is_owner(msg.sender, msg.group):
-        if "黑名单" in msg.plain:
-            bot.send_group_msg(group=msg.group, msg=flt.show())
-        if "解封全部" in msg.plain:
-            bot.send_group_msg(group=msg.group, msg=["已经解封全部成员"])
+        if msg.plain in ["黑名单"]:
+            for blackAccount in flt.show():
+                bot.send_group_msg(group=msg.group, msg=[miraicle.Plain(blackAccount)])
+        if msg.plain in ["解封全部成员"]:
+            bot.send_group_msg(group=msg.group, msg=[miraicle.Plain("已经解封全部成员")])
             flt.clear()
