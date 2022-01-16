@@ -5,5 +5,5 @@
 # 名称：__init__.PY
 # 工具：PyCharm
 __all__ = ["helloworld", "repeat",
-           "blackList", "word_cloud",
+           "blackList", "word_cloud", "groupSwitch",
            "imageSearch", "sendImage", "help"]
