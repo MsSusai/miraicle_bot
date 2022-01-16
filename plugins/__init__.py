@@ -6,4 +6,4 @@
 # 工具：PyCharm
 __all__ = ["helloworld", "repeat",
            "blackList", "word_cloud",
-           "imageSearch", "sendImage"]
+           "imageSearch", "sendImage", "help"]

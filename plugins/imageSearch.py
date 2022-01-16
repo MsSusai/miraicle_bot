@@ -10,6 +10,8 @@ import miraicle
 from assistclass.SauceNaoSearch import SauceNaoSearch
 from assistclass.SauceNaoResult import SearchResults
 
+SENDER = None
+
 
 @miraicle.Mirai.receiver('GroupMessage')
 def searchImage(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
