@@ -20,7 +20,7 @@ def searchImage(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
     if msg.plain in ["识别图片", "识图"]:
         SENDER = msg.sender
         bot.send_group_msg(group=msg.group, msg=[miraicle.At(qq=msg.sender),
-                                                 miraicle.Plain("请发送要识别的图片"), ])
+                                                 miraicle.Plain("\n请发送要识别的图片"), ])
     if msg.sender == SENDER and msg.first_image is not None:
         result = saucenao.searchFromUrl(msg.first_image.url)
         if isinstance(result, SearchResults):
