@@ -25,6 +25,10 @@ def word_cloud(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
         results = cursor.execute(execute_text, content).fetchall()
         results = [r[0] for r in results]
 
+        with open("assistclass/stopwords-master/hit_stopwords.txt", "r", encoding='utf-8',
+                  errors='ignore') as stop_file:
+            stop_words = {line.strip() for line in stop_file}
+
         counts = defaultdict(int)
         for result in results:
             words = jieba.cut(result, cut_all=True)
@@ -32,7 +36,9 @@ def word_cloud(bot: miraicle.Mirai, msg: miraicle.GroupMessage):
                 if word and not word.isspace():
                     counts[word] += 1
 
-        cloud = wordcloud.WordCloud(background_color='white', repeat=True, font_path='simhei.ttf')
+        # print(counts)
+        cloud = wordcloud.WordCloud(background_color='white', repeat=True,
+                                    font_path='simhei.ttf', stopwords=stop_words)
         cloud.generate_from_frequencies(counts)
         figure = plt.figure(figsize=(16, 9))
         plt.axis('off')
